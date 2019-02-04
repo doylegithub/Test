@@ -6,7 +6,9 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-          <Text style={styles.text}>hellow world</Text>
+          <View style={styles.box}>
+            <Text style={styles.text}>hellow world</Text>
+          </View>
 
       </View>
     );
@@ -14,10 +16,19 @@ class App extends Component {
 }
 
 const styles = StyleSheet.create({
+  
   container: {
-    flex: 1,
-    height: 500 ,
+    flex:0,
+    height:500,
+    flexDirection: 'row',
     backgroundColor: 'purple',
+  },
+
+  box: {
+    flex: 1,
+    alignSelf: "center",
+    
+
   },
 
   text: {
