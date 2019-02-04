@@ -9,7 +9,6 @@ class App extends Component {
           <View style={styles.box}>
             <Text style={styles.text}>hellow world</Text>
           </View>
-
       </View>
     );
   }
@@ -18,15 +17,22 @@ class App extends Component {
 const styles = StyleSheet.create({
   
   container: {
-    flex:0,
-    height:500,
-    flexDirection: 'row',
+    flex: 1,
+    width: '100%',
+    height: '100%',
+    margin: 0,
+    padding: 0,
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: 'purple',
+    position: 'fixed'
   },
 
   box: {
     flex: 1,
+    position: 'absolute',
     alignSelf: "center",
+    
     
 
   },
